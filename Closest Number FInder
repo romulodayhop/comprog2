@@ -1,0 +1,16 @@
+x = 300
+print("The global varible is",x)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+diff_a = abs(a-x)
+diff_b = abs(b-x)
+diff_c = abs(c-x)
+
+if abs(a-x) < abs(b-x) and abs(a-x) < abs(c-x):
+    print(a,"is the closest number to",x)
+elif abs(b-x) < abs(a-x) and abs(b-x) < abs(c-x):
+    print(b,"is the closest number to",x)
+else:
+    print(c,"is the closest number to",x)
