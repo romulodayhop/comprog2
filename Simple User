@@ -1,0 +1,10 @@
+name = input("Enter your name: ")
+
+while True:
+    age = input("Enter your age: ")
+    if age.isdigit():
+        break
+    else:
+        print("Please enter a valid number.")
+
+print(f"Hello {name}! You are {age} years old.")
